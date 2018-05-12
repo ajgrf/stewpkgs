@@ -1,5 +1,22 @@
 aptdepends+=(lgogdownloader)
 
+fetch() {
+	local src dest
+	src="${1%>*}"
+	dest=$(destname "$1")
+	if ! test -f "$dest"; then
+		echo "fetching $dest" >&2
+		case "$src" in
+			gogdownloader://*)
+				lgogdownloader --download-file "$src"
+				;;
+			*)
+				curl -L "$src" > "$dest"
+				;;
+		esac
+	fi
+}
+
 unpack_phase() {
 	unzip *.sh || true
 	cd ./data/noarch
