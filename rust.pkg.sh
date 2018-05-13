@@ -1,7 +1,7 @@
 name=rust
-version=1.25.0
+version=1.26.0
 source=("https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz")
-sum=(06fb45fb871330a2d1b32a27badfe9085847fe824c189ddc5204acbe27664f5e)
+sum=(13691d7782577fc9f110924b26603ade1990de0b691a3ce2dc324b4a72a64a68)
 
 install_phase() {
 	./install.sh --prefix="$pkgdir"
