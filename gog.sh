@@ -1,4 +1,5 @@
 aptdepends+=(lgogdownloader)
+description="${description:-$title}"
 
 fetch() {
 	local src dest
@@ -27,10 +28,8 @@ patch_phase() {
 }
 
 install_phase() {
-	mkdir -p "$pkgdir/bin" "$pkgdir/games/$name/support"
-	cp -R start.sh game/ "$pkgdir/games/$name"
-	cp support/gog-system-report.sh support/gog_com.shlib support/icon.png \
-		"$pkgdir/games/$name/support"
+	mkdir -p "$pkgdir/bin" "$pkgdir/games/$name"
+	cp -R * "$pkgdir/games/$name"
 	ln -s "$pkgdir/games/$name/start.sh" "$pkgdir/bin/$name"
 
 	mkdir -p "$pkgdir/share/applications"
