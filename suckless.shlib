@@ -1,0 +1,6 @@
+preconfigure_phase() {
+	# include suckless-style config.h file
+	if test -f "../$name.config.h"; then
+		cp "../$name.config.h" config.h
+	fi
+}

@@ -12,6 +12,8 @@ sum=(c4fb0fe2b8d2d3bd5e72763e80a8ae05b7d44dbac8f8e3bb18ef0161c7266926
 	5a6e2b745c7746228e0ee4e84214e3ac7054e6d451bc5843364e878bb2011e3b
 	8279d347c70bc9b36f450ba15e1fd9ff62eedf49ce9258c35d7f1cfe38cca226)
 
+use suckless
+
 patch_phase() {
 	patch -p1 <"$builddir/${source[3]##*/}"
 	patch -p1 <"$builddir/${source[4]##*/}"
