@@ -1,0 +1,12 @@
+depends+=(go)
+
+gopathify() {
+	mkdir -p "src/${1%/*}"
+	mv "${1##*/}" "src/${1%/*}"
+	cd "src/$1"
+}
+
+postsetup_phase() {
+	export GOBIN="$pkgdir/bin"
+	export GOPATH="$builddir"
+}

@@ -1,6 +1,7 @@
 name=go-tools
-depends=(go)
 gitrepo=("https://go.googlesource.com/tools")
+
+use go
 
 unpack_phase() {
 	gopathify golang.org/x/tools

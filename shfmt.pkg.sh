@@ -1,7 +1,8 @@
 name=shfmt
 version=2.3.0
-depends=(go)
 gitrepo=("https://github.com/mvdan/sh@v${version}")
+
+use go
 
 unpack_phase() {
 	gopathify mvdan.cc/sh

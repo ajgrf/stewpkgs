@@ -1,7 +1,8 @@
 name=rclone
 version=1.40
-depends=(go)
 gitrepo=("https://github.com/ncw/rclone@v${version}")
+
+use go
 
 unpack_phase() {
 	gopathify github.com/ncw/rclone

@@ -1,6 +1,7 @@
 name=vgo
 gitrepo=("https://go.googlesource.com/vgo")
-depends=(go)
+
+use go
 
 unpack_phase() {
 	gopathify golang.org/x/vgo

@@ -1,7 +1,8 @@
 name=dep
 version=0.4.1
-depends=(go)
 gitrepo=("https://github.com/golang/dep@v${version}")
+
+use go
 
 unpack_phase() {
 	gopathify github.com/golang/dep
