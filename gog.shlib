@@ -1,5 +1,6 @@
 aptdepends+=(lgogdownloader)
-description="${description:-$title}"
+title="${title:-$name}"
+description="${description:-the game $title from GOG.com}"
 
 fetch() {
 	local src dest
