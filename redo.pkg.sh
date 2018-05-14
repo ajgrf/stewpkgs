@@ -11,7 +11,7 @@ build_phase() {
 install_phase() {
 	mkdir -p "$pkgdir/bin" "$mandir/man1"
 	for i in redo redo-ifcreate redo-ifchange cubehash; do
-		cp "command/$i"  "$pkgdir/bin/$i"
+		cp "command/$i" "$pkgdir/bin/$i"
 		cp "manual/$i.1" "$mandir/man1/$i.1"
 	done
 }

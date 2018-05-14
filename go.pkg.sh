@@ -7,7 +7,7 @@ sum=(6264609c6b9cd8ed8e02ca84605d727ce1898d74efa79841660b2e3e985a98bd)
 build_phase() {
 	export GOROOT_BOOTSTRAP="$prefix/lib/go1.4-bootstrap"
 	export GOROOT_FINAL="$prefix/lib/$name"
-	( cd ./src && ./make.bash )
+	(cd ./src && ./make.bash)
 }
 
 install_phase() {

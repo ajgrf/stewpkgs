@@ -9,12 +9,12 @@ fetch() {
 	if ! test -f "$dest"; then
 		echo "fetching $dest" >&2
 		case "$src" in
-			gogdownloader://*)
-				lgogdownloader --download-file "$src"
-				;;
-			*)
-				curl -L "$src" > "$dest"
-				;;
+		gogdownloader://*)
+			lgogdownloader --download-file "$src"
+			;;
+		*)
+			curl -L "$src" >"$dest"
+			;;
 		esac
 	fi
 }
@@ -34,7 +34,7 @@ install_phase() {
 	ln -s "$pkgdir/games/$name/start.sh" "$pkgdir/bin/$name"
 
 	mkdir -p "$pkgdir/share/applications"
-	cat > "$pkgdir/share/applications/$name.desktop" <<-EOF
+	cat >"$pkgdir/share/applications/$name.desktop" <<-EOF
 		[Desktop Entry]
 		Name=${title:-$name}
 		Icon=$pkgdir/games/$name/support/icon.png
