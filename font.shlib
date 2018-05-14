@@ -1,0 +1,10 @@
+install_phase() {
+	if find . -name '*.[to]t[fc]' | grep -q ''; then
+		mkdir -p "$pkgdir/share/fonts"
+		find . -name '*.[to]t[fc]' -print0 | xargs -0 cp -t "$pkgdir/share/fonts"
+	fi
+}
+
+postinstall_phase() {
+	fc-cache
+}
