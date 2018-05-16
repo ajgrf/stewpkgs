@@ -1,6 +1,6 @@
 name=rclone
 version=1.40
-gitrepo=("https://github.com/ncw/rclone@v${version}")
+gitrepo="https://github.com/ncw/rclone@v${version}"
 
 use go
 

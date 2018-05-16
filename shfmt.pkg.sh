@@ -1,6 +1,6 @@
 name=shfmt
 version=2.3.0
-gitrepo=("https://github.com/mvdan/sh@v${version}")
+gitrepo="https://github.com/mvdan/sh@v${version}"
 
 use go
 

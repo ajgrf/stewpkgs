@@ -1,6 +1,6 @@
 name=dep
 version=0.4.1
-gitrepo=("https://github.com/golang/dep@v${version}")
+gitrepo="https://github.com/golang/dep@v${version}"
 
 use go
 

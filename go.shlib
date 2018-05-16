@@ -1,4 +1,4 @@
-depends+=(go)
+depends="$depends go"
 
 gopathify() {
 	mkdir -p "src/${1%/*}"

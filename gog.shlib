@@ -1,4 +1,4 @@
-aptdepends+=(lgogdownloader)
+aptdepends="$aptdepends lgogdownloader"
 title="${title:-$name}"
 description="${description:-the game $title from GOG.com}"
 

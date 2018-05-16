@@ -1,7 +1,7 @@
 name=hugo
 version=0.40.1
-depends=(dep)
-gitrepo=("https://github.com/gohugoio/hugo@v${version}")
+depends="dep"
+gitrepo="https://github.com/gohugoio/hugo@v${version}"
 
 use go
 

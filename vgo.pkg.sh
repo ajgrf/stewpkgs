@@ -1,5 +1,5 @@
 name=vgo
-gitrepo=("https://go.googlesource.com/vgo")
+gitrepo="https://go.googlesource.com/vgo"
 
 use go
 

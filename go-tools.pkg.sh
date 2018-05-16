@@ -1,5 +1,5 @@
 name=go-tools
-gitrepo=("https://go.googlesource.com/tools")
+gitrepo="https://go.googlesource.com/tools"
 
 use go
 
