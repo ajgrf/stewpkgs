@@ -1,8 +1,8 @@
 name=firefox
-version=60.0
+version=60.0.1
 source="https://download-installer.cdn.mozilla.net/pub/firefox/releases/$version/linux-x86_64/en-US/firefox-$version.tar.bz2
 	firefox.desktop"
-sum="185808361d70600150f3f63047fa214d86218df0ba6f3a3611f8fb23cd28b8b1
+sum="5e14345d77e72d43816b809a0db0a01c2c98dd196841b1c5bc07dc400af90ee8
 	5bc512b747706793365da8ed51c9550804a7ee65e9073db84ac641149756c524"
 
 install_phase() {
