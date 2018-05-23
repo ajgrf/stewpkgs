@@ -12,16 +12,11 @@ sum="c4fb0fe2b8d2d3bd5e72763e80a8ae05b7d44dbac8f8e3bb18ef0161c7266926
 
 use suckless
 
-patch_phase() {
-	patch -p1 <"$builddir/$(basename $(field 3 $source))"
-	patch -p1 <"$builddir/$(basename $(field 4 $source))"
+postsetup_phase() {
+	export TERMINFO="$pkgdir/share/terminfo"
 }
 
-install_phase() {
-	export TERMINFO="$pkgdir/share/terminfo"
-	mkdir -p "$TERMINFO"
-	autosudo make PREFIX="$pkgdir" install
-
+postinstall_phase() {
 	mkdir -p "$pkgdir/share/applications"
 	cat >"$pkgdir/share/applications/st.desktop" <<-EOF
 		[Desktop Entry]

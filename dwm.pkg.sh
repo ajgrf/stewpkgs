@@ -14,17 +14,7 @@ sum="c2f6c56167f0acdbe3dc37cca9c1a19260c040f2d4800e3529a21ad7cce275fe
 
 use suckless
 
-patch_phase() {
-	patch -p1 <"$builddir/$(basename $(field 2 $source))"
-	patch -p1 <"$builddir/$(basename $(field 3 $source))"
-	patch -p1 <"$builddir/$(basename $(field 4 $source))"
-}
-
 build_phase() {
 	make FREETYPEINC=/usr/include/freetype2 X11INC=/usr/include/X11 \
 		X11LIB=/usr/lib/X11
-}
-
-install_phase() {
-	autosudo make PREFIX="$pkgdir" install
 }

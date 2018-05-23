@@ -1,6 +1,20 @@
-preconfigure_phase() {
+configure_phase() {
 	# include suckless-style config.h file
 	if test -f "../$name.config.h"; then
 		cp "../$name.config.h" config.h
 	fi
+}
+
+patch_phase() {
+	for f in $source; do
+		case "$f" in
+		*.diff)
+			patch -p1 <"$builddir/${f##*/}"
+			;;
+		esac
+	done
+}
+
+install_phase() {
+	autosudo make PREFIX="$pkgdir" install
 }
