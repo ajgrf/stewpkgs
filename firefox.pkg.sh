@@ -1,5 +1,6 @@
 name=firefox
 version=60.0.1
+description="Mozilla Firefox web browser (binary)"
 source="https://download-installer.cdn.mozilla.net/pub/firefox/releases/$version/linux-x86_64/en-US/firefox-$version.tar.bz2
 	firefox.desktop"
 sum="5e14345d77e72d43816b809a0db0a01c2c98dd196841b1c5bc07dc400af90ee8

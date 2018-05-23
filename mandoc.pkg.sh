@@ -1,5 +1,6 @@
 name=mandoc
 version=1.14.3
+description="UNIX manpage compiler toolset"
 source="http://mdocml.bsd.lv/snapshots/mandoc-$version.tar.gz"
 sum=0b0c8f67958c1569ead4b690680c337984b879dfd2ad4648d96924332fd99528
 

@@ -1,5 +1,6 @@
 name=ripgrep
 version=0.8.1
+description="recursively search directories for a regex"
 depends="rust"
 aptdepends="asciidoc"
 source="https://github.com/BurntSushi/ripgrep/archive/${version}.tar.gz>rust-${version}.tar.gz"

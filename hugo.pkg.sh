@@ -1,5 +1,6 @@
 name=hugo
 version=0.40.1
+description="fast and flexible static site generator"
 depends="dep"
 gitrepo="https://github.com/gohugoio/hugo@v${version}"
 

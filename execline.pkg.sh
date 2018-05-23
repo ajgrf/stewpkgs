@@ -1,5 +1,6 @@
 name=execline
 version=2.5.0.0
+description="a non-interactive shell scripting language"
 depends="skalibs"
 source="https://github.com/skarnet/execline/archive/v$version.tar.gz>$name-$version.tar.gz"
 sum=2c705c2ccbfee05e464b107dd6343fcf82a9ab917f0ad4259c98beff41d53bad

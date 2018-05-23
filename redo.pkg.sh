@@ -1,5 +1,6 @@
 name=redo
 version=1.3
+description="a simple build system, make alternative"
 source="https://jdebp.eu/Repository/freebsd/redo-$version.tar.gz"
 sum=191cc99f24c450710fe4ea6dd2bea4a6ed6afab2eb870c4d0232009d4ab3a7fb
 

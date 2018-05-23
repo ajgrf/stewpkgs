@@ -1,4 +1,5 @@
 name=vgo
+description="versioned go command"
 gitrepo="https://go.googlesource.com/vgo"
 
 use go

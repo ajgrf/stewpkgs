@@ -1,5 +1,6 @@
 name=dwm
 version=6.1
+description="dynamic window manager"
 aptdepends="libx11-dev libxinerama-dev libxft-dev libfreetype6-dev"
 source="https://dl.suckless.org/dwm/dwm-$version.tar.gz
 	https://dwm.suckless.org/patches/attachabove/dwm-attachabove-6.1.diff

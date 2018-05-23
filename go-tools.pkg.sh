@@ -1,4 +1,5 @@
 name=go-tools
+description="development tools supporting the Go programming language"
 gitrepo="https://go.googlesource.com/tools"
 
 use go

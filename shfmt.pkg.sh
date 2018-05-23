@@ -1,5 +1,6 @@
 name=shfmt
 version=2.3.0
+description="like gofmt but for shell scripts"
 gitrepo="https://github.com/mvdan/sh@v${version}"
 
 use go
