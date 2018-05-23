@@ -1,5 +1,5 @@
 name=rclone
-version=1.40
+version=1.41
 gitrepo="https://github.com/ncw/rclone@v${version}"
 
 use go
