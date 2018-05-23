@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=st simple terminal
-Type=Application
-Categories=System;TerminalEmulator;
-Icon=utilities-terminal
-StartupWMClass=st-256color
-TryExec=st
-Exec=st
