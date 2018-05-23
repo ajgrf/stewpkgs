@@ -1,7 +1,7 @@
 name=fonts-iosevka
-version=1.14.2
+version=1.14.3
 description="slender typeface for code, from code"
 source="https://github.com/be5invis/Iosevka/releases/download/v$version/iosevka-pack-$version.zip"
-sum=50521c7fa9707f6e03493b7362c65eba94e29f1c738d2605d3d58758e32942f4
+sum=01f3e5d4f8c87dadd1a4fb50d63d59aeaa27e7f7fcf6cb23bcc99e1419d77345
 
 use font
