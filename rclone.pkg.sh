@@ -1,5 +1,5 @@
 name=rclone
-version=1.41
+version=1.42
 description="rsync for cloud storage"
 gitrepo="https://github.com/ncw/rclone@v${version}"
 
