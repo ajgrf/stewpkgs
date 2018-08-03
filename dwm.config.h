@@ -28,25 +28,24 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       0,            0,           -1 },
-	{ "st-256color", NULL,    NULL,       0,            0,           -1 },
-	{ "Gnome-mines", NULL,    NULL,       0,            1,           -1 },
+	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
+	{ "Gimp",     NULL,       NULL,       0,            1,           0,         1,        -1 },
+	{ "Gnome-mines", NULL,    NULL,       0,            1,           0,         1,        -1 },
+	{ "st-256color", NULL,    NULL,       0,            0,           1,         1,        -1 },
+	{ "URxvt",    NULL,       NULL,       0,            0,           1,         1,        -1 },
+	{ "XTerm",    NULL,       NULL,       0,            0,           1,         1,        -1 },
 };
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
 };
 
 /* key definitions */
@@ -62,8 +61,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-p", "RUN", "-m", dmenumon, "-fn", dmenufont, "-nb", selbgcolor, "-nf", selfgcolor, "-sb", selbordercolor, "-sf", "#ffffff", NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *dmenucmd[] = { "dmenu_run_history", "-p", "RUN", "-m", dmenumon, "-fn", dmenufont, "-nb", selbgcolor, "-nf", selfgcolor, "-sb", selbordercolor, "-sf", "#ffffff", NULL };
+static const char *termcmd[]  = { "urxvt", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -86,8 +85,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
-	{ MODKEY,                       XK_o,      setlayout,      {.v = &layouts[4]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
@@ -105,7 +102,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("dmenu_quit") },
 	{ Mod4Mask,                     XK_l,      spawn,          SHCMD("slock") },
 	{ Mod1Mask|ControlMask,         XK_l,      spawn,          SHCMD("slock") },
 	{ Mod4Mask,                     XK_p,      spawn,          SHCMD("setup-monitors") },
