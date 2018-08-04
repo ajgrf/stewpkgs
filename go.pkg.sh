@@ -1,9 +1,9 @@
 name=go
-version=1.11beta2
+version=1.11beta3
 description="the Go programming language"
 depends="go1.4-bootstrap"
 source="https://storage.googleapis.com/golang/go$version.src.tar.gz"
-sum=50f4bd23334f54c60ad7d07c742874c62488cf1556fa3e6e51dc03d5f5abda81
+sum=b11a92814601c85910e3f98dd06b941974d03b48c2c255defbee1cc99f19d721
 
 build_phase() {
 	export GOROOT_BOOTSTRAP="$prefix/lib/go1.4-bootstrap"
