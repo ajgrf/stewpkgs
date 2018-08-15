@@ -1,5 +1,5 @@
 name=mblaze
-version=0.3.2
+version=0.4
 description="UNIX utilities to deal with Maildir"
 source="https://github.com/chneukirchen/mblaze/archive/v$version.tar.gz>$name-$version.tar.gz"
-sum=c402dc58c090a9a9b005f016773b44e22734ce0e40899294abdf2b8ec310b6f5
+sum=83dffd7fe74fa871642e97db94e27c04506f746fa4d6ba2f95c1a880638d6e0c
