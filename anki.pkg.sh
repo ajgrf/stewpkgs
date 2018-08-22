@@ -1,8 +1,8 @@
 name=anki
-version=2.0.52
+version=2.1.2
 description="powerful, intelligent flash cards (binary)"
-source="https://apps.ankiweb.net/downloads/current/anki-${version}-amd64.tar.bz2"
-sum=0304869bcc9e966839e3b3408048748be57d645ed0227fbaf0abebe8c18726d0
+source="https://apps.ankiweb.net/downloads/current/anki-${version}-linux-amd64.tar.bz2"
+sum=e020d1b01c2075573f118fd6a0fa86d468a93ef43f3b72e9c6a9484bfd140b03
 
 install_phase() {
 	make PREFIX="$pkgdir" install
