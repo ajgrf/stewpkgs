@@ -1,5 +1,5 @@
 name=shfmt
-version=2.3.0
+version=2.5.1
 description="like gofmt but for shell scripts"
 gitrepo="https://github.com/mvdan/sh@v${version}"
 
