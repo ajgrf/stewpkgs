@@ -7,14 +7,12 @@ source="https://dl.suckless.org/dwm/dwm-$version.tar.gz
 	https://dwm.suckless.org/patches/attachabove/dwm-attachabove-6.1.diff
 	https://dwm.suckless.org/patches/push/dwm-push-6.1.diff
 	https://dwm.suckless.org/patches/swallow/dwm-swallow-6.1.diff
-	https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-6.1.diff
-	dwm.config.h"
+	https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-6.1.diff"
 sum="c2f6c56167f0acdbe3dc37cca9c1a19260c040f2d4800e3529a21ad7cce275fe
 	b2a1118f0ea4c8f239323d072958f1aabd084f1caa48f4507559cdcea475b0a1
 	1ccc71598762bcb5551024676a18405bf497339672e2caf55fa25ac566927c64
 	7161a158056746e6c319fe14b55c3de84808ec3cdcde288607ecd6d9e511e533
-	502d3679bcb55109d43eaec5b62bcf1b20bdf4a7d0cb68018e9a4e5dfd568796
-	4ee481a698c93967759ab354018f40e4adef40f33d37988fa54f89ff06d4fb73"
+	502d3679bcb55109d43eaec5b62bcf1b20bdf4a7d0cb68018e9a4e5dfd568796"
 
 use suckless
 
