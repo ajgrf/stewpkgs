@@ -5,6 +5,8 @@ gitrepo="https://github.com/golang/dep@v${version}"
 
 use go
 
+unset -f build_phase
+
 unpack_phase() {
 	gopathify github.com/golang/dep
 }
