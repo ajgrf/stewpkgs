@@ -1,17 +1,13 @@
 name=hugo
-version=0.47.1
+version=0.49
 description="fast and flexible static site generator"
-depends="dep"
 gitrepo="https://github.com/gohugoio/hugo@v${version}"
 
 use go
 
-unpack_phase() {
-	gopathify github.com/gohugoio/hugo
-}
+unset -f postsetup_phase
 
 build_phase() {
-	dep ensure
 	go build
 	./hugo gen man
 }
