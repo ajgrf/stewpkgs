@@ -1,13 +1,11 @@
 name=rclone
-version=1.42
+version=1.43.1
 description="rsync for cloud storage"
 gitrepo="https://github.com/ncw/rclone@v${version}"
 
 use go
 
-unpack_phase() {
-	gopathify github.com/ncw/rclone
-}
+unset -f postsetup_phase
 
 build_phase() {
 	go build
