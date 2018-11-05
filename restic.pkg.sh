@@ -1,8 +1,8 @@
 name=restic
-version=0.9.2
+version=0.9.3
 description="backups done right"
 source="https://github.com/restic/restic/releases/download/v$version/restic-$version.tar.gz"
-sum=8f8eee3e9651b9f7384a323ba3c26a5667a6388ab2ef8e6d869d3cd69b9f7c95
+sum=b95a258099aee9a56e620ccebcecabc246ee7f8390e3937ccedadd609c6d2dd0
 
 use go
 
