@@ -1,5 +1,5 @@
 name=hugo
-version=0.49
+version=0.50
 description="fast and flexible static site generator"
 gitrepo="https://github.com/gohugoio/hugo@v${version}"
 
