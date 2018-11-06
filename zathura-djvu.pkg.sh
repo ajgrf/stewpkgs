@@ -3,8 +3,8 @@ version=0.2.8
 aptdepends="libdjvulibre-dev"
 depends="zathura"
 description="DjVu plugin for zathura"
-source="https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-${version}.tar.xz"
-sum=d0e664d5312bdc0674fdf8cc6e259c9ee1365714172bc809f9c0f69659d8b32b
+source="https://github.com/pwmt/zathura-djvu/archive/${version}.tar.gz>zathura-djvu-${version}.tar.gz"
+sum=58325958b5aecc4f7cd8281b564aadeea151fafd1de84e4fa269932f96a3a776
 
 use meson
 
