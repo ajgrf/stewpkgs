@@ -3,8 +3,8 @@ version=0.2.6
 aptdepends="libspectre-dev"
 depends="zathura"
 description="PostScript plugin for zathura"
-source="https://pwmt.org/projects/zathura-ps/download/zathura-ps-${version}.tar.xz"
-sum=7eb085b41fc88979f997310b4e703455e6a81b6ef1ae7db0b6324b6f13c2cf73
+source="https://github.com/pwmt/zathura-ps/archive/${version}.tar.gz>zathura-ps-${version}.tar.gz"
+sum=08c1927bfb8a40e201fa3638f9523d4b6d70e3444ef070bd4aa8a869b6574567
 
 use meson
 
