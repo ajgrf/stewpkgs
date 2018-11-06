@@ -1,10 +1,10 @@
 name=zathura
-version=0.4.0
+version=0.4.1
 depends="libgirara"
 aptdepends="libgtk-3-dev python3-sphinx"
 description="highly customizable document viewer"
-source="https://pwmt.org/projects/zathura/download/zathura-${version}.tar.xz"
-sum=aa629259c6ac729e90abdda1b9b51854adaa6851192f08a55e63379500541ec8
+source="https://github.com/pwmt/zathura/archive/${version}.tar.gz>zathura-${version}.tar.gz"
+sum=a659042c64f65188d5806b8ed4109e6ec5c582836c099c437333b85b06f2eb4c
 
 use meson
 
