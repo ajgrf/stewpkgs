@@ -1,8 +1,8 @@
 name=mandoc
-version=1.14.4
+version=1.14.5
 description="UNIX manpage compiler toolset"
 source="http://mdocml.bsd.lv/snapshots/mandoc-$version.tar.gz"
-sum=24eb72103768987dcc63b53d27fdc085796330782f44b3b40c4660b1e1ee9b9c
+sum=8219b42cb56fc07b2aa660574e6211ac38eefdbf21f41b698d3348793ba5d8f7
 
 configure_phase() {
 	cat >configure.local <<-EOF
