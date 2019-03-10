@@ -1,9 +1,8 @@
 name=lowdown
-version=0.4.0
+version=0.4.2
 description="simple Markdown translator"
-depends=libdiff
 source="https://kristaps.bsd.lv/lowdown/snapshots/lowdown-${version}.tar.gz"
-sum=d075ddb3c1fb9908d1b72c395429a0faebd3940f9c995e817eb2e93923c9ccaa
+sum=2a9d318a4f0898dd6cb65a46ad5cdf23d85660fcbbcebe19aa4828a4ca2f5c04
 
 configure_phase() {
 	./configure PREFIX="$pkgdir" MANDIR="$mandir" LDFLAGS="-L$prefix/lib"
