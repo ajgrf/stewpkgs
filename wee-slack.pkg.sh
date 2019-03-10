@@ -1,9 +1,9 @@
 name=wee-slack
-version=2.1.1
+version=2.2.0
 description="a WeeChat plugin for Slack.com"
 aptdepends="python-websocket"
 source="https://github.com/wee-slack/wee-slack/archive/v$version.tar.gz>wee-slack-$version.tar.gz"
-sum=8c0d5c1635b1e8e0440a7f27290ce3e3a1fd1ae9c682e0d898d2f2ba4dfd2f19
+sum=1d08387a301b63f07e74d2a40c5e5f8af54783ba0e3375b6f1fd5eba2fa4da68
 
 install_phase() {
 	mkdir -p "$pkgdir/share/weechat/python"
