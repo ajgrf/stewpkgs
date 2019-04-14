@@ -1,6 +1,6 @@
 name=markdownfmt
-revision=5ba28a0bf0048ea9b00cecd23688dcf6cfb23fe5
-version=20180625.$(gitver "$revision")
+revision=3438a10682f5f5790da1e59ac7d6518c499d9a2f
+version=20190409.$(gitver "$revision")
 description="like gofmt but for Markdown"
 gitrepo="https://github.com/shurcooL/markdownfmt@${revision}"
 
