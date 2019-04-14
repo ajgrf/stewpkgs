@@ -1,5 +1,5 @@
 name=dep
-version=0.5.0
+version=0.5.1
 description="Go dependency management tool"
 gitrepo="https://github.com/golang/dep@v${version}"
 
