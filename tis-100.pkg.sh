@@ -1,4 +1,4 @@
-name=tis100
+name=tis-100
 title="TIS-100"
 version=11.27.2017
 buildno=16765
