@@ -1,9 +1,9 @@
 name=starbound
 title="Starbound"
-version=1.3.3
-buildno=15781
+version=1.4.3
+buildno=30562
 aptdepends="libsdl2-2.0-0"
-source="gogdownloader://starbound/en3installer0>starbound_en_$(echo "$version" | sed 's/\./_/g')_$buildno.sh"
-sum=5969127b0e19ecb178a984983f66d69c91b4e76c6db9788384e177f42d78bead
+source="gogdownloader://starbound/en3installer0>starbound_$(echo "$version" | sed 's/\./_/g')_$buildno.sh"
+sum=eebc6118931f67b173f7d760a2dcdc0cc10d0f1b9a9d8ff436367837f00c0cae
 
 use gog
