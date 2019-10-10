@@ -7,6 +7,7 @@ sum=6a2442192aad8fae3642b925d1ff04368eef3a390043e6164c8eb2fd2a438ceb
 
 postsetup_phase() {
 	unset LDFLAGS
+	export CGO_ENABLED=0
 }
 
 configure_phase() {
